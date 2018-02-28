@@ -22,6 +22,7 @@ var server = http.createServer((req, res) => {
         var full_file = path.join(public_dir, file);
         fs.readFile(full_file, (err, data) => {
             if (err) {
+                console.log("Error: cannot read " + file);
                 res.writeHead(404, {'Content-Type': 'text/plain'});
                 res.write('Error: 404 Content not found');
                 res.end();
