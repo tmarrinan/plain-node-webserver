@@ -1,2 +1,2 @@
-# plain-node-webserver
+# Plain Node Webserver
 Barebones Web Server using Node JS
